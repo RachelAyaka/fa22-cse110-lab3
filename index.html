@@ -8,7 +8,10 @@
     </head>
     <body>
         <header>
-            <div>What we will be going over</div>
+            <a href="https://hkn.ieee.org/">What is HKN?</a>
+            <div><i>Today's meeting date and time: 10/6 3-4pm</i></div>
+            <link rel="link to README" href="README.md">
+            <div><u>What we will be going over</u></div>
 
             <nav>
                 <ul id="Going-over">
@@ -30,38 +33,98 @@
             <img src="HKNSomiSomiSocial.jpg" alt="graphic" width="500"/>
 
             <h2 id="Info">Basic Info</h2>
-                <div>Date: 10/13</div>
+                <div>Date: <span>October 13, 2022</span></div>
                 <div>Time: 4:30pm - 5:30pm</div>
                 <div>Where: Meet up at Warren Blue Line to UTC</div>
 
             <h2 id="Check-ins">Check-ins</h2>
-            <div>Attendance:</div>
-            <ol>
-                <li><input type="checkbox"/>Rachel</li>
-                <li><input type="checkbox"/>Annie</li>
-                <li><input type="checkbox"/>Wei</li>
-                <li><input type="checkbox"/>Kanishka</li>
-                <li><input type="checkbox"/>Melissa</li>
-            </ol>
+            <section>
+                <h3>Attendance:</h3>
+                <ol>
+                    <li><input type="checkbox"/>Rachel</li>
+                    <li><input type="checkbox"/>Annie</li>
+                    <li><input type="checkbox"/>Wei</li>
+                    <li><input type="checkbox"/>Kanishka</li>
+                    <li><input type="checkbox"/>Melissa</li>
+                </ol>
+            </section>
 
             <h2 id="ToDo">Checklist</h2>
             <ol>
-                <li><input type="checkbox"/>Did you have another officer review your event plan/schedule?</li>
+                <li><input type="checkbox"/>Did you have <em>another officer</em> review your event plan/schedule?</li>
                 <li><input type="checkbox"/>Did you contact necessary people who will host/help run the event?</li>
                 <li><input type="checkbox"/>Within a week of the event, are you reminding people of your event on Discord?</li>
                 <li><input type="checkbox"/>After the event, did you add an entry to the HKN Events Log 2022-2023 doc?</li>
-                <li><input type="checkbox"/>Did you submit a chapter activity report to IEEE-HKN?</li>
+                <li><input type="checkbox"/>Did you submit a <b>chapter activity report</b> to IEEE-HKN?</li>
             </ol>
 
         </main>
+
+        <h3>Event Brainstorm</h3>
+        <ul>
+            <li>Meet at Warren by the steps at Blue Line 10/13 4:20-4:30 pm</li>
+            <li>Walk over to Somi Somi (towards the back of UTC)</li>
+            <li>If people come late, meet us at Somi Somi</li>
+            <li>Activities: name tag game (practice round on Monday)</li>
+            <li>Ask another officer to help me</li>
+        </ul>
 
         <details>
             <summary>Summary</summary>
             <p>
                 We discussed about the event for next week. Make sure to do all
                 the thing under Checklist.
+                If you have missed this meeting, here are the audio and video.
             </p>
+            <video width="320" height="240" controls>
+                <source src="lab2movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio controls preload="none" style="width:480px;">
+                <source src="lab2audio.m4a" type="audio/mp4">
+            </audio>
         </details>
+        <br>
+        <p>Feel free to leave <strong>Concerns, Comments, or Questions</strong></p>
+        <section>
+            <fieldset>
+                <form> If you have any questions, please fill out the form</form>
+                <br>
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" placeholder="enter your name" required>
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="enter your name" required>
+                <br>
 
+                <label for="people-choice">Who are you:</label>
+                <input list="who-are-you" id="people-choice" name="people-choice">
+                <datalist id="who-are-you">
+                    <option value="Student">
+                    <option value="Alumni">
+                    <option value="Advisor">
+                </datalist>
+                <br>
+
+                <label for="purpose-select">Purpose:</label>
+                <select name="purpose" id="purpose-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Questions">Questions</option>
+                    <option value="Concerns">Concern</option>
+                    <option value="Comments">Comments</option>
+                </select>
+                <br>
+
+                <textarea id="story" name="story" rows="5" cols="33"></textarea>
+                <br>
+                <button class="submit" type="button"> 
+                    Submit
+                </button>
+            </fieldset>
+        </section>
+
+        <hr>
+        <footer>
+        This event was created by Rachel
+        </footer>
     </body>
 </html>
