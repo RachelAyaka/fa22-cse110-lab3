@@ -1,1 +1,72 @@
-/* create external CSS file */
+/* created external CSS file */
+
+/* background color */
+body {
+    background-color: #ffff99;
+}
+
+/* absolute units */
+button {
+    margin-left: 10px;
+    display: inline;
+    /* Position */
+    position: sticky;
+}
+img {
+    margin-left: .1in;
+    /* Position */
+    position: relative;
+}
+.dateTime {
+    font-size: .8cm;
+    border: dashed;
+    margin: auto;
+    /* Sizing */
+    max-width: 10in;
+    min-width: 2in;
+}
+
+/* relative units */
+.relative li {
+    font-size: 1.3em;
+}
+.relativeVw {
+    /* Sizing */
+    width: 30vw;
+}
+.relativeVh {
+    /* Sizing */
+    height: 5vh;
+}
+.percent {
+    /* Sizing */
+    width: 60%;
+}
+/* Box Model */
+h2 {
+    border: 2px solid palevioletred;
+    padding : 3px 2in 3px .1em;
+    margin : 1px 2px 10px 1px;
+
+    /* Text */
+    color: darkgoldenrod;
+    text-decoration: underline wavy yellow;
+    text-align: justify;
+    display: block
+}
+.forms {
+    border-color: #FF00FF;
+    border-radius: 2em;
+    border-width: 1px;
+    border-style: dotted;
+
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 2em;
+
+    margin-top: .5in;
+    margin-bottom: .1in;
+    margin-left: .4em;
+    margin-right: 1in;
+}
