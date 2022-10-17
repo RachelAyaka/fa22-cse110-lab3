@@ -7,6 +7,7 @@ body {
 
 /* absolute units */
 button {
+
     margin-left: 10px;
     display: inline;
     /* Position */
@@ -33,14 +34,20 @@ img {
 .relativeVw {
     /* Sizing */
     width: 30vw;
+
+    border: 2px solid blue;
 }
 .relativeVh {
     /* Sizing */
     height: 5vh;
+
+    border: 2px solid blue;
 }
 .percent {
     /* Sizing */
     width: 60%;
+
+    border: 2px solid blue;
 }
 /* Box Model */
 h2 {
@@ -69,4 +76,38 @@ h2 {
     margin-bottom: .1in;
     margin-left: .4em;
     margin-right: 1in;
+}
+/* pseudo classes */
+.relative li:hover {
+    color:#FF00FF;
+}
+.relative li:active {
+    color:red;
+}
+
+/* Layouts */
+.basicinfo {
+    /* Flexbox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+} 
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-auto-rows: 50px;
+    grid-column-gap: 20px;
+}
+
+/* Responsiveness */
+@media (min-width: 600px) {
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Fonts */
+h1 {
+    font-family: 'Bebas Neue', cursive;
 }
