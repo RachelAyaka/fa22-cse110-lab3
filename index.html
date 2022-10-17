@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rachel's Ice Cream Social</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="ExternalCSS.css">
         <link rel="icon" type="image/png" href="./somisomi.png">
     </head>
@@ -24,7 +27,7 @@
         </header>
 
         <main>
-            <h1>Somi Somi Social</h1>
+            <h1 style="color:blue;">Somi Somi Social </h1>
                 
             <button onClick="window.location.href='https://www.facebook.com/hknucsd';">
                 HKN Facebook Link
@@ -34,10 +37,11 @@
             <img src="HKNSomiSomiSocial.jpg" alt="graphic" width="500"/>
 
             <h2 id="Info">Basic Info</h2>
-                <div class="relativeVw">Date: <span>October 13, 2022</span></div>
-                <div class="percent">Time: 4:30pm - 5:30pm</div>
-                <div class="relativeVh">Where: Meet up at Warren Blue Line to UTC</div>
-
+                <div class="basicinfo">
+                    <div class="relativeVw">Date: <span>October 13, 2022</span></div>
+                    <div class="percent">Time: 4:30pm - 5:30pm</div>
+                    <div class="relativeVh">Where: Meet up at Warren Blue Line to UTC</div>
+                </div>
             <h2 id="Check-ins">Check-ins</h2>
             <section>
                 <h3>Attendance:</h3>
@@ -62,16 +66,18 @@
         </main>
 
         <h3>Event Brainstorm</h3>
-        <ul>
+        <p>yup</p>
+        <a>this should be light blue</a>
+        <ul id="grid">
             <li>Meet at Warren by the steps at Blue Line 10/13 4:20-4:30 pm</li>
             <li>Walk over to Somi Somi (towards the back of UTC)</li>
-            <li>If people come late, meet us at Somi Somi</li>
+            <li>If people come late, meet us at <span class="somisomi">Somi Somi</span></li>
             <li>Activities: name tag game (practice round on Monday)</li>
             <li>Ask another officer to help me</li>
         </ul>
 
         <details>
-            <summary>Summary</summary>
+            <summary class="sum">Summary</summary>
             <p>
                 We discussed about the event for next week. Make sure to do all
                 the thing under Checklist.
@@ -86,6 +92,7 @@
             </audio>
         </details>
         <br>
+        
         <section class="forms">
             <p>Feel free to leave <strong>Concerns, Comments, or Questions</strong></p>
             <fieldset>
